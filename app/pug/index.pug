@@ -5,15 +5,21 @@ html
 	include blocks/head.pug
 		title
 	body
-		
-
 		main.page-container
 			section.main-block
 				img.main-block__bg(src=img+"идщсллл 1.png", alt="")
 				include blocks/header.pug
 				.container(class="main-block__sect")
+					.main-block__absolute-1
+						p Любая форма навеса
+					.main-block__absolute-2
+						img.abs(src=img+"image 98.png", alt="")
+						h4 300+
+						p вариантов в каталоге
+						a(href="#") 
+							img(src=img+"image 97.png", alt="")
 					h1 Изготавливаем навесы которые <span>не падают</span>
-					.main-block__subtitle Изготовим металлический навес любой сложности<b> в течении 7 дней с доставкой</b> и установкой в Москве и Московской области
+					.main-block__subtitle <div class="circles"><div class="cirle-3"></div><div class="cirle-2"></div><div class="cirle-1"></div></div><div class="sub-txt">Изготовим металлический навес любой сложности<b> в течении 7 дней с доставкой</b> и установкой в Москве и Московской области</div>
 					.flex(class="main-block__params")
 						a.btn(href="#")
 							img(src=img+"image 8.png", alt="")
@@ -50,7 +56,7 @@ html
 				h2 Металлические навесы
 				.catalog__items 
 					.catalog__item
-						a(href="#") 
+						a(href="../dist/product.html") 
 							img(src=img+"/katalog/image 10.png", alt="")
 						.flex 
 							.catalog__txt Беседки из поликарбоната
@@ -220,6 +226,34 @@ html
 							img.delivery__bg-2(src=img+"kust-2.png", alt="")
 							img.delivery__bg-3(src=img+"kust-3.png", alt="")
 							img.delivery__car(src=img+"car.png", alt="")
+			section.gallery
+				.container
+					.gallery__subtitle Фотогаллерея
+					.flex
+						h2.gallery__title Наши работы
+						.swiper-arrow
+							.prev__wrapper
+								.swiper-button-prev
+							.next__wrapper
+								.swiper-button-next
+					.swiper-container(class="mySwiper")
+						.swiper-wrapper
+							.swiper-slide
+								img(src=img+"gallery/image 10.png", alt="")
+							.swiper-slide
+								img(src=img+"gallery/image 10 (1).png", alt="")
+							.swiper-slide
+								img(src=img+"gallery/image 10 (2).png", alt="")
+							.swiper-slide
+								img(src=img+"gallery/image 10 (3).png", alt="")
+							.swiper-slide
+								img(src=img+"gallery/image 10.png", alt="")
+							.swiper-slide
+								img(src=img+"gallery/image 10 (1).png", alt="")
+							.swiper-slide
+								img(src=img+"gallery/image 10 (2).png", alt="")
+							.swiper-slide
+								img(src=img+"gallery/image 10 (3).png", alt="")
 			section.models 
 				.container
 					.models__subtitle Новые модели
@@ -353,12 +387,12 @@ html
 				.container 
 					.map__block 
 						.map__subtitle РЕГИОНЫ РАБОТЫ
-						h2.map__title Работаем по Москве и Московской области
+						h2.map__title Работаем по Москве<br> и Московской области
 						.map__txt Осуществляем доставку и устанавку металлических навесов из поликарбоната по Москве и всей Московской области. Доставка в регионы осуществляется посредством привлечения любой из транспортных компаний
 						a.btn(href="#") Заказать навес
 			section.baner-main(class="container")
 				.baner-main__text 
-					h3 <span>300+</span> проектов в каталоге
+					h3 <div>300+</div> проектов в каталоге
 					p Готовые проекты навесов - сэкономят Вам время и деньги
 				img(src=img+"kat.png", alt="")
 				a.btn(href="#") полный каталог
@@ -421,24 +455,59 @@ html
 							h4 Они купили поликарбонат – и сразу отказались от стекла. Почему?
 							p В чем разница между стеклянными панелями и листами поликарбоната
 							a(href="#") узнать Подробнее
-			section.cost-online(class="container")
-				h2.cost-online__title Мы предоставляем вам самые низкие цены на навесы, которые в течение 30 лет: 
-				img.cost-online__bg(src=img+"image 52.png", alt="")
-				.flex 
-					.cost-online__item
-						.cost-online__item-ico 
-							img(src=img+"image 52.png", alt="")
-						p Не упадут
-					.cost-online__item
-						.cost-online__item-ico 
-							img(src=img+"image 52.png", alt="")
-						p Не облезут
-					.cost-online__item
-						.cost-online__item-ico 
-							img(src=img+"image 52.png", alt="")
-						p Не протекут
-				.cost-online__gost ГОСТ Р ИСО 4355-2016
-				a.btn(href="#") Узнать стоимость онлайн
-
+			section.cost-online
+				img.cost-online__bg(src=img+"image 49.png", alt="")
+				.container
+					img.cost-online__kust-1(src=img+"imgae 50.png", alt="")
+					img.cost-online__kust-2(src=img+"image 51.png", alt="")
+					h2.cost-online__title Мы предоставляем вам самые низкие цены на навесы, которые в течение 30 лет: 
+					.flex 
+						.cost-online__item
+							.cost-online__item-ico 
+								img(src=img+"image 52.png", alt="")
+							p Не упадут
+						.cost-online__item
+							.cost-online__item-ico 
+								img(src=img+"image 52.png", alt="")
+							p Не облезут
+						.cost-online__item
+							.cost-online__item-ico 
+								img(src=img+"image 52.png", alt="")
+							p Не протекут
+					.cost-online__gost ГОСТ Р ИСО 4355-2016
+					a.btn(href="#") Узнать стоимость онлайн
+					.accordion
+						.accordion__tab
+							input(type="checkbox" id="tab1" name="tab-group")
+							label(for="tab1" class="tab-title") Как легко построить навес из поликарбоната в Москве?
+							.accordion__content 
+								p pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim
+						.accordion__tab
+							input(type="checkbox" id="tab2" name="tab-group")
+							label(for="tab2" class="tab-title") «Спецкаркас» — навесы из поликарбоната в Москве и МО
+							.accordion__content 
+								p pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim
+						.accordion__tab
+							input(type="checkbox" id="tab3" name="tab-group")
+							label(for="tab3" class="tab-title") Чем хорош поликарбонат в роли облицовки для навеса в Москве
+							.accordion__content 
+								p pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim
+						.accordion__tab
+							input(type="checkbox" id="tab4" name="tab-group")
+							label(for="tab4" class="tab-title") Как мы проводим установку навесов из поликарбоната
+							.accordion__content 
+								p pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim
+						.accordion__tab
+							input(type="checkbox" id="tab5" name="tab-group")
+							label(for="tab5" class="tab-title") Как рассчитываются цены на навесы из поликарбоната
+							.accordion__content 
+								p pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim
+						.accordion__tab
+							input(type="checkbox" id="tab6" name="tab-group")
+							label(for="tab6" class="tab-title") Почему стоит купить навес из поликарбоната от «Спецкаркас»
+							.accordion__content 
+								p pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim
+					
+					
 		include blocks/footer.pug
 		include blocks/scripts.pug
